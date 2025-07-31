@@ -1,0 +1,82 @@
+{
+  "window": {
+    "height": 480,
+    "width": 640,
+    "title": "Panel",
+    "monitor": null,
+    "background": [1.0, 1.0, 1.0, 0.0],
+    "hint": {
+      "GLver_major": 4,
+      "GLver_minor": 5,
+      "use_forward-compat": true,
+      "use_core-profile": true
+    }
+  },
+  "panel": {
+    "base-size": [64, 64]
+  },
+  "assets": {
+    "texture": [
+      {
+        "key": "speedMeter0",
+        "src": "simpleSpeedMeter.png",
+        "wrap": "edge",
+        "filter": "nearest"
+      },
+      {
+        "key": "speedMeterBG",
+        "src": "speedmeter_trimedv2.png",
+        "wrap": "edge",
+        "filter": "linear"
+      },
+      {
+        "key": "label",
+        "src": "labelSample.png",
+        "wrap": "repeat",
+        "filter": "linear"
+      }
+    ],
+    "shader": [
+      {
+        "key": "speedMeterNeedle",
+        "vertex": "spNeedle.vert",
+        "fragment": "spNeedle.frag"
+      },
+      {
+        "key": "object",
+        "vertex": "object.vert",
+        "fragment": "object.frag"
+      },
+      {
+        "key": "label",
+        "vertex": "label.vert",
+        "fragment": "label.frag"
+      }
+    ],
+    "object": [
+      {
+        "shader": "object",
+        "texture": "speedMeterBG",
+        "rect-type": "right-bottom",
+        "geometory": [0.0, 0.0],
+        "position": [0.0, 0.0]
+      },
+      {
+        "shader": "speedMeterNeedle",
+        "texture": "speedMeter0",
+        "rect-type": "left-top",
+        "geometory": [0.0, -0.2],
+        "position": [0.0, 0.0]
+      }
+    ],
+    "label": [
+      {
+        "shader": "label",
+        "texture": "label",
+        "rect-scale": [0.70, 1.0],
+        "digits": 5,
+        "position": [-11.0, 0.0]
+      }
+    ]
+  }
+}
