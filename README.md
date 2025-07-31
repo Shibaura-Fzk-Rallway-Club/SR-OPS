@@ -14,12 +14,6 @@ OpenGLを用いた自作運転台向け運転台パネル表示システム
 *注意 :*
 *暴走している状態で閉じるとBVEがクラッシュする可能性があります*
 
-## ライブラリ
-- [boost](https://github.com/boostorg/boost)
-- [glfw](https://github.com/glfw/glfw)
-- [glad](https://github.com/Dav1dde/glad/releases/tag/v2.0.8)
-- [stb](https://github.com/nothings/stb)
-
 # リファレンス
 ## setup.json
 ## window
